@@ -1,5 +1,6 @@
 // import React, { useEffect } from 'react';
 import './Header.scss';
+import {Link, NavLink} from "react-router-dom";
 
 export default function Header() {
     // useEffect(() => {
@@ -28,10 +29,10 @@ export default function Header() {
                 </div>
                 <div className={"gnb"}>
                     <ul>
-                        <li><a href={"/"}>Home</a></li>
-                        <li><a href={"/"}>About</a></li>
-                        <li><a href={"/"}>Portfolio</a></li>
-                        <li><a href={"/"}>Contact</a></li>
+                        <li><Link to={"/"}>Home</Link></li>
+                        <li><NavLink to={"/about"}>About</NavLink></li>
+                        <li><NavLink to={"/portfolio"}>Portfolio</NavLink></li>
+                        <li><NavLink to={"/contact"}>Contact</NavLink></li>
                     </ul>
                 </div>
             </div>

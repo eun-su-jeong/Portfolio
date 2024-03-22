@@ -1,13 +1,39 @@
 header{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 90px;
+    z-index: 200;
+
     .header_wrap{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px;
-        background-color: #000;
+        transform: translateX(-50%);
+        position: absolute;
+        left: 50%;
+        max-width: 1920px;
+        width: 100%;
+        padding: 25px 40px;
+        z-index: 202;
+        //background-color: #000;
+
         .logo_wrap{
+            position: relative;
+            width: 240px;
+            height: 30px;
             h1{
+                position: fixed;
+                top: 120px;
+                left: 100px;
+                max-width: 1400px;
+                min-width: 240px;
+                font-size: 0;
+
                 a{
+                    font-family: 'Cafe24ClassicType';
                     font-size: 40px;
                     color: #fff;
                 }
