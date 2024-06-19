@@ -1,25 +1,24 @@
 import "./style/Globel.scss";
 import Header from "./component/header/Header";
 import Footer from "./component/footer/Footer";
-import Intro from "./component/intro/Intro";
 import About from "./component/about/About";
-import Portfolio from "./component/portfolio/Portfolio";
 import Contact from "./component/contact/Contact";
 import {Route, Routes} from "react-router-dom";
+import Main from "./component/main/Main";
+import Portfolio from "./component/main/portfolio/Portfolio";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Header/>
-        <Intro/>
+        <Main/>
       <Routes>
-        <Route path="/" exact component={Intro}/>
-        <Route path="/about" component={About}/>
-        <Route path="/portfolio" component={Portfolio}/>
-        <Route path="/contact" component={Contact}/>
+        <Route path="/about" element={<About/>}/>
+        <Route path="/portfolio" element={<Portfolio/>}/>
+        <Route path="/contact" element={<Contact/>}/>
       </Routes>
       <Footer/>
-    </div>
+    </>
   );
 }
 

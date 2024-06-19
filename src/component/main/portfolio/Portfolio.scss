@@ -1,0 +1,72 @@
+.portfolio {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  color: #222;
+  padding: 50px 2rem;
+
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    li {
+      width: 100%;
+      height: 100vh;
+      padding: 50px 0;
+
+      a {
+        display: block;
+        margin: 0 auto;
+        width: 30vw;
+        height: 500px;
+        background-color: #fff;
+        border: 1px solid #222;
+
+        .project_wrap {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+
+          p{
+            position: absolute;
+            font-size: 5rem;
+            font-weight: bold;
+          }
+        }
+      }
+      &:nth-of-type(2n-1) {
+        a {
+          .project_wrap {
+            p{
+             right: 15vw;
+            }
+          }
+        }
+      }
+
+      &:nth-of-type(2n) {
+        a {
+          .project_wrap {
+            p{
+              left: 15vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}

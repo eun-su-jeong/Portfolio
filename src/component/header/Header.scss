@@ -25,7 +25,7 @@ header{
             width: 240px;
             height: 30px;
             h1{
-                position: fixed;
+                //position: fixed;
                 top: 120px;
                 left: 100px;
                 max-width: 1400px;
@@ -33,9 +33,9 @@ header{
                 font-size: 0;
 
                 a{
-                    font-family: 'Cafe24ClassicType';
-                    font-size: 40px;
-                    color: #fff;
+                    font-size: 2rem;
+                    font-weight: bold;
+                    color: #222;
                 }
             }
         }
@@ -46,7 +46,7 @@ header{
                     a{
                       padding: 5px 20px;
                         font-size: 20px;
-                        color: #fff;
+                        color: #222;
                     }
                 }
             }

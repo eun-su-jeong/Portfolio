@@ -1,4 +1,27 @@
 @font-face {
+  font-family: 'IMHyemin';
+  font-weight: 400;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/dgb/IMHyeminRegular.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/dgb/IMHyeminRegular.eot?#iefix') format('embedded-opentype'),
+  url('https://cdn.jsdelivr.net/gh/webfontworld/dgb/IMHyeminRegular.woff2') format('woff2'),
+  url('https://cdn.jsdelivr.net/gh/webfontworld/dgb/IMHyeminRegular.woff') format('woff'),
+  url('https://cdn.jsdelivr.net/gh/webfontworld/dgb/IMHyeminRegular.ttf') format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'IMHyemin';
+  font-weight: 700;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/dgb/IMHyeminBold.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/dgb/IMHyeminBold.eot?#iefix') format('embedded-opentype'),
+  url('https://cdn.jsdelivr.net/gh/webfontworld/dgb/IMHyeminBold.woff2') format('woff2'),
+  url('https://cdn.jsdelivr.net/gh/webfontworld/dgb/IMHyeminBold.woff') format('woff'),
+  url('https://cdn.jsdelivr.net/gh/webfontworld/dgb/IMHyeminBold.ttf') format("truetype");
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'Cafe24ClassicType';
   font-weight: normal;
   font-style: normal;
@@ -82,6 +105,16 @@
   padding: 0;
   box-sizing: border-box;
   font-weight: normal;
+  font-family: 'IMHyemin';
+}
+body {
+  background-color: #fff;
+  color: #222;
+}
+main{
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
 }
 ul,
 ol,
